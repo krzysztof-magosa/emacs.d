@@ -132,6 +132,9 @@
   (progn
     (add-hook 'prog-mode-hook 'smartparens-mode)))
 
+(use-package smooth-scrolling
+  :ensure t)
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
