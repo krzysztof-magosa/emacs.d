@@ -37,6 +37,13 @@
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups")))))
 
+; auto refresh buffers
+(global-auto-revert-mode 1)
+
+; also auto refresh dired
+(setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-verbose nil)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
