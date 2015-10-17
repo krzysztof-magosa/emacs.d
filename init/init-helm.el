@@ -15,4 +15,9 @@
   :ensure t
   :defer t)
 
+(use-package helm-flycheck
+  :ensure t
+  :defer t
+  :bind ("C-c 1" . helm-flycheck))
+
 (provide 'init-helm)
