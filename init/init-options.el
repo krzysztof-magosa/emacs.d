@@ -26,6 +26,9 @@
 ; highlight trailing whitespace
 (setq-default show-trailing-whitespace t)
 
+; Changes all yes/no questions to y/n type
+(fset 'yes-or-no-p 'y-or-n-p)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
