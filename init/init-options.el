@@ -54,8 +54,8 @@
 (auto-compression-mode 1)
 
 (when (eq system-type 'darwin)
-  (when (file-exists-p "/opt/local/bin/gls")
-    (setq insert-directory-program "/opt/local/bin/gls")
+  (when (file-exists-p "/usr/local/bin/gls")
+    (setq insert-directory-program "/usr/local/bin/gls")
     (setq dired-listing-switches "-aBhl --group-directories-first")))
 
 (provide 'init-options)
