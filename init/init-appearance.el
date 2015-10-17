@@ -46,4 +46,9 @@
     (eval-after-load "highlight-current-line" '(diminish 'highlight-current-line-minor-mode))
     (eval-after-load "company" '(diminish 'company-mode))))
 
+(set-face-attribute 'default nil
+                    :family "Source Code Pro for Powerline"
+                    :height 130
+                    :weight 'normal)
+
 (provide 'init-appearance)
