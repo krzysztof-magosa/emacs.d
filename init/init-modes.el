@@ -125,6 +125,13 @@
     (setq-default save-place t)
     (setq save-place-file (expand-file-name ".places" user-emacs-directory))))
 
+(use-package smartparens
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'smartparens-mode)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
