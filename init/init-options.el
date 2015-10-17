@@ -1,6 +1,9 @@
 ; always use spaces and not tabs to indent code
 (setq-default indent-tabs-mode nil)
 
+; don't display welcome message
+(setq inhibit-startup-message t)
+
 ; don't show menu bar
 (menu-bar-mode -1)
 
