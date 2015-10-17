@@ -6,7 +6,7 @@
   (progn
     (add-hook 'c++-mode-hook 'irony-mode)))
 
-; snippets
+;; snippets
 (use-package yasnippet
   :ensure t
   :defer t
@@ -31,7 +31,7 @@
     (setq flycheck-phpcs-standard "PSR2")
     (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))))
 
-; edit symbol in multiple places in the same time
+;; edit symbol in multiple places in the same time
 (use-package iedit
   :ensure t
   :defer t
@@ -45,7 +45,7 @@
     (add-hook 'c-mode-common-hook 'semantic-mode))
   :config
   (progn
-    ; reparse opened buffers
+    ;; reparse opened buffers
     (global-semantic-idle-scheduler-mode 1)
     (global-semanticdb-minor-mode 1)))
 

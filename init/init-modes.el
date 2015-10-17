@@ -1,4 +1,4 @@
-; php
+;; php
 (use-package php-mode
   :ensure t
   :defer t
@@ -118,7 +118,7 @@
          ("<ESC> <up>" . move-text-up)
          ("<ESC> <down>" . move-text-down)))
 
-; keep cursor in the same place between sessions
+;; keep cursor in the same place between sessions
 (use-package saveplace
   :init
   (progn

@@ -5,7 +5,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-; install use-package if needed
+;; install use-package if needed
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))

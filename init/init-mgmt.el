@@ -14,7 +14,7 @@
     (setq projectile-enable-idle-timer t)
     (setq projectile-enable-caching t)))
 
-; it must be here on the bottom, because of bug with cl lib
+;; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
   :defer t

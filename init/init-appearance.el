@@ -1,9 +1,9 @@
-; flatland-theme
-; ujelly-theme
-; molokai-theme
-; twilight-bright-theme
-; material-theme
-; flatland-theme
+;; flatland-theme
+;; ujelly-theme
+;; molokai-theme
+;; twilight-bright-theme
+;; material-theme
+;; flatland-theme
 (use-package moe-theme
   :ensure t
   :config

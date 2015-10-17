@@ -1,4 +1,4 @@
-; auto complete related stuff
+;; auto complete related stuff
 (use-package company
   :ensure t
   :defer t
