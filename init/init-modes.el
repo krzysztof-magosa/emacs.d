@@ -118,6 +118,13 @@
          ("<ESC> <up>" . move-text-up)
          ("<ESC> <down>" . move-text-down)))
 
+; keep cursor in the same place between sessions
+(use-package saveplace
+  :init
+  (progn
+    (setq-default save-place t)
+    (setq save-place-file (expand-file-name ".places" user-emacs-directory))))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
