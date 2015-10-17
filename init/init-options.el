@@ -32,6 +32,11 @@
 ; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
+; Store backups in separate directory
+(setq backup-directory-alist
+      `(("." . ,(expand-file-name
+                 (concat user-emacs-directory "backups")))))
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
