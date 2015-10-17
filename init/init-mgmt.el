@@ -1,6 +1,5 @@
 (use-package projectile
   :ensure t
-  :defer t
   :init
   (progn
     (add-hook 'prog-mode-hook 'projectile-global-mode)
