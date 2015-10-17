@@ -12,3 +12,4 @@ ido.last
 eshell/*
 projectile.cache
 helm-adaptive-history
+.places
