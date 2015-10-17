@@ -11,6 +11,9 @@
 (eval-when-compile
   (require 'use-package))
 
+(use-package benchmark-init
+  :ensure t)
+
 (add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
 
 (require 'init-options)
