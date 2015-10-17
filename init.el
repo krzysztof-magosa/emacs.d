@@ -30,3 +30,4 @@
 (require 'init-other)
 (require 'init-keyboard)
 (require 'init-appearance)
+(require 'init-aliases)
