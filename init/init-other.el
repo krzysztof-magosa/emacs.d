@@ -66,6 +66,9 @@
 
 (use-package ggtags
   :ensure t
-  :defer t)
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'ggtags-mode)))
 
 (provide 'init-other)
