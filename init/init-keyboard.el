@@ -11,4 +11,6 @@
 (define-key global-map (kbd "C-<left>") 'windmove-left)
 (define-key global-map (kbd "C-<right>") 'windmove-right)
 
+(define-key global-map (kbd "C-c C-c") 'comment-or-uncomment-region)
+
 (provide 'init-keyboard)
