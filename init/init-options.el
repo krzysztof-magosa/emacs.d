@@ -50,6 +50,9 @@
 ; remove text in active region when inserting new one
 (delete-selection-mode 1)
 
+; automatically opens compressed files
+(auto-compression-mode 1)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
