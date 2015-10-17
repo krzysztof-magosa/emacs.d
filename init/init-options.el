@@ -44,6 +44,9 @@
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 
+; show keystrokes in progress
+(setq echo-keystrokes 0.1)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
