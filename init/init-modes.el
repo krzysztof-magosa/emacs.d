@@ -45,7 +45,9 @@
 (use-package yaml-mode
   :defer t
   :ensure t
-  :mode "\\.yaml\\'")
+  :mode "\\.yaml\\'"
+  :mode "ansible/group_vars/.*"
+  :mode "ansible/host_vars/.*")
 
 (use-package json-mode
   :defer t
