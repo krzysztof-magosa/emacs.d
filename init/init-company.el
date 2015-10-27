@@ -16,7 +16,8 @@
 ;;    (add-to-list 'company-backends 'company-yasnippet))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'company-mode)))
+    (add-hook 'prog-mode-hook 'company-mode)
+    (add-hook 'yaml-mode-hook 'company-mode)))
 
 (use-package company-ansible
   :ensure t
