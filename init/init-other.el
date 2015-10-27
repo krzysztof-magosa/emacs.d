@@ -25,7 +25,8 @@
   :defer t
   :init
   (progn
-    (add-hook 'prog-mode-hook 'flycheck-mode))
+    (add-hook 'prog-mode-hook 'flycheck-mode)
+    (add-hook 'yaml-mode-hook 'flycheck-mode))
   :config
   (progn
     (setq flycheck-phpcs-standard "PSR2")
