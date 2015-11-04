@@ -127,16 +127,6 @@
     (setq-default save-place t)
     (setq save-place-file (expand-file-name ".places" user-emacs-directory))))
 
-(use-package autopair
-  :ensure t
-  :defer t
-  :config
-  (progn
-    (setq autopair-autowrap t))
-  :init
-  (progn
-    (add-hook 'prog-mode-hook 'autopair-mode 1)))
-
 (use-package smooth-scrolling
   :ensure t)
 

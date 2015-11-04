@@ -53,6 +53,10 @@
 ;; automatically opens compressed files
 (auto-compression-mode 1)
 
+;; electric indent, putting pair of parens and removing them
+(electric-indent-mode 1)
+(electric-pair-mode 1)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/usr/local/bin/gls")
     (setq insert-directory-program "/usr/local/bin/gls")
