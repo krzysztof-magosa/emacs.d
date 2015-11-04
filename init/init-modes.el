@@ -140,6 +140,40 @@
 (use-package smooth-scrolling
   :ensure t)
 
+(use-package ecb
+  :ensure t
+  :defer t
+  :config
+  (progn
+    (ecb-layout-define "km-layout" left nil
+                       (ecb-set-directories-buffer)
+                       (ecb-split-ver 0.40 t)
+                       (other-window 1)
+                       (ecb-set-sources-buffer)
+                       (ecb-split-ver 0.30 t)
+                       (other-window 1)
+                       (ecb-set-methods-buffer)
+                       (select-window (next-window)))
+    ;;    (setq ecb-source-path '("/Users/hexio/projects/cpp/core"))
+    (defvar default-ecb-source-path (list '("~/projects" "projects")))
+    (add-hook 'ecb-basic-buffer-sync-hook
+              (lambda ()
+                (when (functionp 'projectile-get-project-directories)
+                  (when (projectile-project-p)
+                    (dolist (path-dir (projectile-get-project-directories))
+                      (unless (member (list path-dir path-dir) default-ecb-source-path)
+                        (push (list path-dir path-dir) default-ecb-source-path)
+                        (customize-set-variable 'ecb-source-path default-ecb-source-path)))))))
+    (setq ecb-tip-of-the-day nil)
+    (setq ecb-show-sources-in-directories-buffer 'always)
+    (setq ecb-compile-window-height 6)
+    (setq ecb-windows-width 0.27)
+    (setq ecb-layout-name "km-layout")
+    (setq ecb-compile-window-width (quote edit-window)))
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'ecb-activate)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
