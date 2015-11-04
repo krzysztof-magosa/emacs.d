@@ -142,6 +142,8 @@
 
 (use-package ecb
   :ensure t
+  :defer t
+  :bind ("<f12>" . ecb-activate)
   :functions (ecb-activate)
   :config
   (progn
@@ -168,10 +170,9 @@
     (setq ecb-compile-window-height 6)
     (setq ecb-windows-width 0.27)
     (setq ecb-layout-name "km-layout")
-    (setq ecb-compile-window-width (quote edit-window)))
-  :init
-  (progn
-    (ecb-activate)))
+    (setq ecb-auto-activate t)
+    (setq ecb-compile-window-width (quote edit-window))))
+;; after-init-hook
 
 ;;(use-package emacs-eclim
 ;;  :ensure t
