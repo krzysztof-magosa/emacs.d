@@ -11,8 +11,7 @@
     (setq projectile-project-root-files-bottom-up '(".project-root"))
     (setq projectile-git-command "git ls-files -zco")
     (setq projectile-completion-system 'helm)
-    (setq projectile-enable-idle-timer t)
-    (setq projectile-enable-caching t)))
+    (setq projectile-enable-idle-timer t)))
 
 ;; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
