@@ -142,7 +142,7 @@
 
 (use-package ecb
   :ensure t
-  :defer t
+  :functions (ecb-activate)
   :config
   (progn
     (ecb-layout-define "km-layout" left nil
@@ -154,7 +154,6 @@
                        (other-window 1)
                        (ecb-set-methods-buffer)
                        (select-window (next-window)))
-    ;;    (setq ecb-source-path '("/Users/hexio/projects/cpp/core"))
     (defvar default-ecb-source-path (list '("~/projects" "projects")))
     (add-hook 'ecb-basic-buffer-sync-hook
               (lambda ()
@@ -172,7 +171,7 @@
     (setq ecb-compile-window-width (quote edit-window)))
   :init
   (progn
-    (add-hook 'c-mode-common-hook 'ecb-activate)))
+    (ecb-activate)))
 
 ;;(use-package emacs-eclim
 ;;  :ensure t
