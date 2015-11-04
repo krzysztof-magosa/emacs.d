@@ -13,3 +13,4 @@ eshell/*
 projectile.cache
 helm-adaptive-history
 .places
+ede-projects.el
