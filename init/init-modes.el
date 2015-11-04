@@ -127,12 +127,15 @@
     (setq-default save-place t)
     (setq save-place-file (expand-file-name ".places" user-emacs-directory))))
 
-(use-package smartparens
+(use-package autopair
   :ensure t
   :defer t
+  :config
+  (progn
+    (setq autopair-autowrap t))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'smartparens-mode)))
+    (add-hook 'prog-mode-hook 'autopair-global-mode)))
 
 (use-package smooth-scrolling
   :ensure t)
