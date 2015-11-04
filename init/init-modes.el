@@ -172,7 +172,7 @@
     (setq ecb-compile-window-width (quote edit-window)))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'ecb-activate)))
+    (add-hook 'c-mode-common-hook 'ecb-activate)))
 
 ;;(use-package emacs-eclim
 ;;  :ensure t
