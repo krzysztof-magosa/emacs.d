@@ -135,7 +135,7 @@
     (setq autopair-autowrap t))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'autopair-global-mode)))
+    (add-hook 'prog-mode-hook 'autopair-mode 1)))
 
 (use-package smooth-scrolling
   :ensure t)
