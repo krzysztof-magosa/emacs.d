@@ -1,4 +1,5 @@
 (use-package projectile
+  :diminish projectile-mode
   :ensure t
   :init
   (progn

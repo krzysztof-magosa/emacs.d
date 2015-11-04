@@ -13,6 +13,7 @@
     (powerline-moe-theme)))
 
 (use-package highlight-current-line
+  :diminish highlight-current-line-minor-mode
   :ensure t
   :defer t
   :config
@@ -36,15 +37,7 @@
     (powerline-default-theme)))
 
 (use-package diminish
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (eval-after-load "projectile" '(diminish 'projectile-mode))
-    (eval-after-load "osx-clipboard" '(diminish 'osx-clipboard-mode))
-    (eval-after-load "git-gutter" '(diminish 'git-gutter-mode))
-    (eval-after-load "highlight-current-line" '(diminish 'highlight-current-line-minor-mode))
-    (eval-after-load "company" '(diminish 'company-mode))))
+  :ensure t)
 
 (set-face-attribute 'default nil
                     :family "Source Code Pro for Powerline"
