@@ -3,8 +3,7 @@
   :ensure t
   :init
   (progn
-    (add-hook 'prog-mode-hook 'projectile-global-mode)
-    (add-hook 'dired-mode-hook 'projectile-global-mode))
+    (projectile-global-mode))
   :config
   (progn
     (setq projectile-project-root-files '(".project-root"))
