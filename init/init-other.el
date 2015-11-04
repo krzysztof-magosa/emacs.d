@@ -1,11 +1,3 @@
-(use-package irony
-  :ensure t
-  :defer t
-  :commands irony-mode
-  :init
-  (progn
-    (add-hook 'c++-mode-hook 'irony-mode)))
-
 ;; snippets
 (use-package yasnippet
   :ensure t
