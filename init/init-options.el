@@ -12,7 +12,7 @@
 
 ;; show line number
 (global-linum-mode 1)
-(setq linum-format "%4d ")
+(setq linum-format " %4d ")
 
 ;; display column number in status bar
 (setq column-number-mode t)
