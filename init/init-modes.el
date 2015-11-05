@@ -157,7 +157,6 @@
                         (customize-set-variable 'ecb-source-path default-ecb-source-path)))))))
     (setq ecb-tip-of-the-day nil)
     (setq ecb-show-sources-in-directories-buffer 'always)
-    (setq ecb-compile-window-height 6)
     (setq ecb-windows-width 0.27)
     (setq ecb-layout-name "km-layout")
     (setq ecb-auto-activate t)
