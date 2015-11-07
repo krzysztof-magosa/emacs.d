@@ -22,6 +22,7 @@
   :config
   (progn
     (setq flycheck-phpcs-standard "PSR2")
+    (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++11")))
     (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))))
 
 ;; edit symbol in multiple places in the same time
