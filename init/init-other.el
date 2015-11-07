@@ -57,11 +57,4 @@
   (progn
     (add-hook 'python-mode-hook 'pyvenv-mode)))
 
-(use-package ggtags
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'prog-mode-hook 'ggtags-mode)))
-
 (provide 'init-other)
