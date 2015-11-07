@@ -9,7 +9,7 @@
     (setq company-idle-delay 0.2)
     (add-to-list 'company-backends 'company-go)
     (add-to-list 'company-backends 'company-jedi)
-    (add-to-list 'company-backends 'company-clang)
+;;    (add-to-list 'company-backends 'company-clang)
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-ansible)
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
