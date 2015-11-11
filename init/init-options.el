@@ -57,6 +57,9 @@
 (electric-indent-mode 1)
 (electric-pair-mode 1)
 
+(add-hook 'c++-mode-hook '(lambda ()
+                           (setq-local c-basic-offset 2)))
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/usr/local/bin/gls")
     (setq insert-directory-program "/usr/local/bin/gls")
