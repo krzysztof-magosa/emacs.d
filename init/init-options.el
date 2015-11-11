@@ -57,6 +57,10 @@
 (electric-indent-mode 1)
 (electric-pair-mode 1)
 
+(setq c-default-style
+      '((c++-mode . "java")
+        (other . "java")))
+
 (add-hook 'c++-mode-hook '(lambda ()
                            (setq-local c-basic-offset 2)))
 
