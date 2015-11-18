@@ -163,6 +163,13 @@
     (setq ecb-compile-window-width (quote edit-window))))
 ;; after-init-hook
 
+(use-package cmake-ide
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (cmake-ide-setup)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
