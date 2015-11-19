@@ -117,8 +117,8 @@
   :ensure t
   :defer t
   :bind (
-         ("<ESC> <up>" . move-text-up)
-         ("<ESC> <down>" . move-text-down)))
+         ("<ESC> <up>" . move-text-up)       ;; alt+up
+         ("<ESC> <down>" . move-text-down))) ;; alt+down
 
 ;; keep cursor in the same place between sessions
 (use-package saveplace
