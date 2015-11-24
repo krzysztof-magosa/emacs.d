@@ -4,13 +4,9 @@
 ;; twilight-bright-theme
 ;; material-theme
 ;; flatland-theme
-(use-package moe-theme
-  :ensure t
-  :config
-  (progn
-    (load-theme 'moe-dark t)
-    (moe-theme-set-color 'blue)
-    (powerline-moe-theme)))
+;; moe-theme
+(use-package monokai-theme
+  :ensure t)
 
 (use-package highlight-current-line
   :diminish highlight-current-line-minor-mode
