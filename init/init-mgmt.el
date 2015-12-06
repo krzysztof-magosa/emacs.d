@@ -6,6 +6,9 @@
     (projectile-global-mode))
   :config
   (progn
+    (setq projectile-globally-ignored-files '(
+                                              "*.o"
+                                              "a.out"))
     (setq projectile-project-root-files '(".project-root"))
     (setq projectile-project-root-files-top-down-recurring '(".project-root"))
     (setq projectile-project-root-files-bottom-up '(".project-root"))
