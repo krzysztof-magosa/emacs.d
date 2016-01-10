@@ -86,6 +86,10 @@
   :ensure t
   :defer t)
 
+(use-package bison-mode
+  :ensure t
+  :defer t)
+
 (use-package org
   :ensure t
   :defer t
