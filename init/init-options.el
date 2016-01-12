@@ -53,9 +53,8 @@
 ;; automatically opens compressed files
 (auto-compression-mode 1)
 
-;; electric indent, putting pair of parens and removing them
+;; electric indent
 (electric-indent-mode 1)
-(electric-pair-mode 1)
 
 (setq c-default-style
       '((c++-mode . "java")
