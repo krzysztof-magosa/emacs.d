@@ -99,6 +99,13 @@
   :ensure t
   :defer t)
 
+(use-package evil-numbers
+  :ensure t
+  :defer t
+  :bind ("C-c =" . evil-numbers/inc-at-pt) ; so i don't have to press shift ;)
+  :bind ("C-c +" . evil-numbers/inc-at-pt)
+  :bind ("C-c -" . evil-numbers/dec-at-pt))
+
 (use-package whitespace-cleanup-mode
   :ensure t)
 
