@@ -19,7 +19,7 @@
 
 ;; show matching pairs of parentheses
 (show-paren-mode 1)
-(setq show-paren-style 'expression)
+(setq show-paren-style 'parenthesis)
 (setq show-paren-delay 0)
 
 ;; when splitting screen try to put new window on bottom
