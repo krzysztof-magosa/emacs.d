@@ -95,6 +95,10 @@
   :defer t
   :mode ("\\.hax\\'" . haxor-mode))
 
+(use-package paradox
+  :ensure t
+  :defer t)
+
 (use-package org
   :ensure t
   :defer t
