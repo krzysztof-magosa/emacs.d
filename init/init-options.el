@@ -64,8 +64,8 @@
                             (setq-local c-basic-offset 2)))
 
 (when (eq system-type 'darwin)
-  (when (file-exists-p "/usr/local/bin/gls")
-    (setq insert-directory-program "/usr/local/bin/gls")
+  (when (file-exists-p "/opt/homebrew/bin/gls")
+    (setq insert-directory-program "/opt/homebrew/bin/gls")
     (setq dired-listing-switches "-aBhl --group-directories-first")))
 
 (provide 'init-options)
