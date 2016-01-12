@@ -61,8 +61,7 @@
         (other . "java")))
 
 (add-hook 'c++-mode-hook '(lambda ()
-                            (setq-local c-basic-offset 2)
-                            (add-hook 'before-save-hook 'delete-trailing-whitespace)))
+                            (setq-local c-basic-offset 2)))
 
 (when (eq system-type 'darwin)
   (when (file-exists-p "/usr/local/bin/gls")

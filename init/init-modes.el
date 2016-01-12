@@ -99,6 +99,9 @@
   :ensure t
   :defer t)
 
+(use-package whitespace-cleanup-mode
+  :ensure t)
+
 (use-package org
   :ensure t
   :defer t
