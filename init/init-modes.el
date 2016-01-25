@@ -161,6 +161,16 @@
 (use-package smooth-scrolling
   :ensure t)
 
+(use-package linum-relative
+  :ensure t
+  :defer f
+  :init
+  (progn
+    (linum-relative-mode))
+  :config
+  (progn
+    (setq linum-relative-format "%3s ")))
+
 (use-package ecb
   :ensure t
   :defer t
