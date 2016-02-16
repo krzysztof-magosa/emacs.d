@@ -5,11 +5,10 @@
 ;; material-theme
 ;; flatland-theme
 ;; moe-theme
-(use-package base16-theme
+(use-package moe-theme
   :ensure t
-  :init
-  (progn
-    (load-theme 'base16-eighties-dark t)))
+  :config
+  (load-theme 'moe-dark t))
 
 (use-package highlight-current-line
   :diminish highlight-current-line-minor-mode
