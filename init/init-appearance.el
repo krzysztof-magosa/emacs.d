@@ -5,8 +5,11 @@
 ;; material-theme
 ;; flatland-theme
 ;; moe-theme
-(use-package monokai-theme
-  :ensure t)
+(use-package base16-theme
+  :ensure t
+  :init
+  (progn
+    (load-theme 'base16-eighties-dark t)))
 
 (use-package highlight-current-line
   :diminish highlight-current-line-minor-mode
