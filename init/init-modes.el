@@ -164,6 +164,7 @@
 (use-package linum-relative
   :ensure t
   :defer f
+  :disabled t
   :init
   (progn
     (linum-relative-mode))
