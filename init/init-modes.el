@@ -144,6 +144,20 @@
     (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
     (add-hook 'c++-mode-hook 'rainbow-delimiters-mode)))
 
+(use-package rainbow-identifiers
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)))
+
+(use-package highlight-numbers
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'highlight-numbers-mode)))
+
 (use-package move-text
   :ensure t
   :defer t
