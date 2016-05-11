@@ -1,4 +1,4 @@
-(setq gc-cons-threshold 134217728)
+(setq gc-cons-threshold (* 128 1024 1024))
 
 (require 'package)
 (setq package-enable-at-startup nil)
