@@ -66,6 +66,8 @@
 |C-S-<down>|Move buffer down|
 |C-S-<left>|Move buffer to left|
 |C-S-<right>|Move buffer to right|
+|C-c left|Undo last window operation|
+|C-c right|Redo last window operation|
 
 ## Useful commands
 |Command|Action|
