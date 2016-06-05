@@ -56,6 +56,9 @@
 ;; electric indent
 (electric-indent-mode 1)
 
+;; start with empty editor
+(setq initial-scratch-message "")
+
 (setq c-default-style
       '((c++-mode . "java")
         (other . "java")))
