@@ -178,6 +178,11 @@
 (use-package winner-mode
   :ensure f)
 
+(use-package switch-window
+  :ensure t
+  :defer t
+  :bind ("C-x o" . switch-window))
+
 (use-package linum-relative
   :ensure t
   :defer f
