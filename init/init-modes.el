@@ -175,6 +175,9 @@
 (use-package smooth-scrolling
   :ensure t)
 
+(use-package winner-mode
+  :ensure f)
+
 (use-package linum-relative
   :ensure t
   :defer f
