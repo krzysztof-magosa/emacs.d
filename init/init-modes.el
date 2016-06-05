@@ -229,6 +229,10 @@
   (progn
     (cmake-ide-setup)))
 
+(use-package bats-mode
+  :ensure t
+  :defer t)
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
