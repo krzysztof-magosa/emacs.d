@@ -178,6 +178,12 @@
 (use-package winner-mode
   :ensure f)
 
+(use-package undo-tree
+  :ensure t
+  :init
+  (progn
+   (global-undo-tree-mode)))
+
 (use-package switch-window
   :ensure t
   :defer t
