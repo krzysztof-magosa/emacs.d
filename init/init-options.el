@@ -59,12 +59,17 @@
 ;; start with empty editor
 (setq initial-scratch-message "")
 
-(setq c-default-style
-      '((c++-mode . "java")
-        (other . "java")))
+(c-add-style "km-style"
+             '("java"
+               (c-basic-offset . 2)
+               (c-offsets-alist
+                (arglist-intro . +)
+                (arglist-close . c-lineup-close-paren)
+                )))
 
-(add-hook 'c++-mode-hook '(lambda ()
-                            (setq-local c-basic-offset 2)))
+(setq c-default-style
+      '((c++-mode . "km-style")
+        (other . "java")))
 
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/homebrew/bin/gls")
