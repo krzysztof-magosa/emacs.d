@@ -115,7 +115,11 @@
   :bind ("C-c -" . evil-numbers/dec-at-pt))
 
 (use-package whitespace-cleanup-mode
-  :ensure t)
+  :ensure t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'whitespace-cleanup-mode)
+    (add-hook 'yaml-mode-hook 'whitespace-cleanup-mode)))
 
 (use-package org
   :ensure t
