@@ -84,7 +84,8 @@
 
 (use-package jinja2-mode
   :ensure t
-  :defer t)
+  :defer t
+  :mode "\\.j2\\'")
 
 (use-package bison-mode
   :ensure t
