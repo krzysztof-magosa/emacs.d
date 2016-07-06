@@ -168,7 +168,9 @@
   :defer t
   :bind (
          ("<ESC> <up>" . move-text-up)       ;; alt+up
-         ("<ESC> <down>" . move-text-down))) ;; alt+down
+         ("<M-up>" . move-text-up)
+         ("<ESC> <down>" . move-text-down)   ;; alt+down
+         ("<M-down>" . move-text-down)))
 
 ;; keep cursor in the same place between sessions
 (use-package saveplace
