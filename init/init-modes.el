@@ -260,6 +260,13 @@
   :ensure t
   :defer t)
 
+(use-package editorconfig
+  :ensure t
+  :defer t
+  :init
+  (add-hook 'prog-mode-hook (editorconfig-mode 1))
+  (add-hook 'text-mode-hook (editorconfig-mode 1)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
