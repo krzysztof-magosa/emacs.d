@@ -267,6 +267,10 @@
   (add-hook 'prog-mode-hook (editorconfig-mode 1))
   (add-hook 'text-mode-hook (editorconfig-mode 1)))
 
+(use-package swift-mode
+  :ensure t
+  :defer t)
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
