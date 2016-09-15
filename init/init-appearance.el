@@ -5,10 +5,16 @@
 ;; material-theme
 ;; flatland-theme
 ;; moe-theme
-(use-package moe-theme
+(use-package afternoon-theme
   :ensure t
-  :config
-  (load-theme 'moe-dark t))
+  :init
+  (progn
+    (if (daemonp)
+        (add-hook 'after-make-frame-functions
+                  (lambda (frame)
+                    (select-frame frame)
+                    (load-theme 'afternoon t)))
+      (load-theme 'afternoon t))))
 
 (use-package highlight-current-line
   :diminish highlight-current-line-minor-mode
