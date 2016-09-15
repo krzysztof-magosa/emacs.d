@@ -13,7 +13,8 @@
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-ansible)
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
-    (add-to-list 'company-backends 'company-inf-ruby))
+    (add-to-list 'company-backends 'company-inf-ruby)
+    (add-to-list 'company-backends 'company-sourcekit))
 ;;    (add-to-list 'company-backends 'company-yasnippet))
   :init
   (progn
@@ -21,6 +22,10 @@
     (add-hook 'yaml-mode-hook 'company-mode)))
 
 (use-package company-ansible
+  :ensure t
+  :defer t)
+
+(use-package company-sourcekit
   :ensure t
   :defer t)
 
