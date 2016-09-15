@@ -278,6 +278,10 @@
   :ensure t
   :defer t)
 
+(use-package dockerfile-mode
+  :ensure t
+  :defer t)
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
