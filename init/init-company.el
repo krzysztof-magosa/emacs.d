@@ -13,7 +13,6 @@
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-ansible)
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
-    (add-to-list 'company-backends 'company-inf-ruby)
     (add-to-list 'company-backends 'company-sourcekit))
 ;;    (add-to-list 'company-backends 'company-yasnippet))
   :init
@@ -44,10 +43,6 @@
   (progn
     (add-to-list 'company-c-headers-path-system '"/usr/include")
     (add-to-list 'company-c-headers-path-system '"/usr/include/c++/4.2.1")))
-
-(use-package company-inf-ruby
-  :ensure t
-  :defer t)
 
 (use-package company-quickhelp
   :ensure t
