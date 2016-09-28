@@ -18,6 +18,14 @@
 (use-package gruvbox-theme
   :ensure t)
 
+(use-package highlight-symbol
+  :ensure t
+  :defer t
+  :config
+  (setq-default highlight-symbol-idle-delay 1.0)
+  :init
+  (add-hook 'prog-mode-hook 'highlight-symbol-mode))
+
 (use-package highlight-current-line
   :diminish highlight-current-line-minor-mode
   :ensure t
