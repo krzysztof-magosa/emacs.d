@@ -274,7 +274,7 @@
   (add-hook 'prog-mode-hook (editorconfig-mode 1))
   (add-hook 'text-mode-hook (editorconfig-mode 1)))
 
-(use-package swift3-mode
+(use-package swift-mode
   :ensure t
   :defer t)
 
