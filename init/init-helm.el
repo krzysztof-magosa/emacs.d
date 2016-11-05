@@ -1,10 +1,23 @@
 (use-package helm
   :ensure t
   :defer t
+  :config
+  (progn
+    (use-package helm-flx
+      :ensure t
+      :config
+      (progn
+        (helm-flx-mode +1)))
+    (use-package helm-fuzzier
+      :ensure t
+      :config
+      (progn
+        (helm-fuzzier-mode 1))))
   :bind (
          ("M-x" . helm-M-x)
          ("C-x b" . helm-buffers-list)
          ("C-x C-f" . helm-find-files)))
+
 
 (use-package helm-git-grep
   :ensure t
