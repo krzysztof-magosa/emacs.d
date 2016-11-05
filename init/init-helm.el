@@ -11,6 +11,14 @@
   :defer t
   :bind("C-c g" . helm-git-grep))
 
+(use-package helm-codesearch
+  :ensure t
+  :defer t
+  :bind(
+        ("C-c h f" . helm-codesearch-find-file)
+        ("C-c h t" . helm-codesearch-find-pattern)
+        ("C-c h I" . helm-codesearch-create-csearchindex)))
+
 (use-package helm-projectile
   :ensure t
   :defer t)
