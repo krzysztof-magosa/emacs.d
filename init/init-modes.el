@@ -163,6 +163,12 @@
   (progn
     (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)))
 
+(use-package cff
+  :ensure t
+  :defer t
+  :bind(
+        ("M-o" . cff-find-other-file)))
+
 (use-package highlight-numbers
   :ensure t
   :defer t
