@@ -1,6 +1,7 @@
 (use-package helm
   :ensure t
   :defer t
+  :commands helm-make-source
   :config
   (progn
     (use-package helm-flx
