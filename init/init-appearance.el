@@ -46,6 +46,9 @@
     (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
 (use-package powerline
+(use-package evil
+  :ensure t)
+
   :ensure t
   :init
   (progn
