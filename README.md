@@ -58,14 +58,14 @@
 |C-c 1|Show flycheck errors in Helm|
 |C-h f|Describe function|
 |M-.|Go to tag on cursor|
-|C-<up>|Jump to window above|
-|C-<down>|Jump to window below|
-|C-<left>|Jump to window on the left|
-|C-<right>|Jump to window on the right|
-|C-S-<up>|Move buffer up|
-|C-S-<down>|Move buffer down|
-|C-S-<left>|Move buffer to left|
-|C-S-<right>|Move buffer to right|
+|C-\<up\>|Jump to window above|
+|C-\<down\>|Jump to window below|
+|C-\<left\>|Jump to window on the left|
+|C-\<right\>|Jump to window on the right|
+|C-S-\<up\>|Move buffer up|
+|C-S-\<down\>|Move buffer down|
+|C-S-\<left\>|Move buffer to left|
+|C-S-\<right\>|Move buffer to right|
 |C-c left|Undo last window operation|
 |C-c right|Redo last window operation|
 
