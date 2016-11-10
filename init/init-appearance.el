@@ -45,14 +45,16 @@
     (add-hook 'prog-mode-hook 'highlight-indentation-mode)
     (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
-(use-package powerline
 (use-package evil
   :ensure t)
 
+(use-package spaceline
   :ensure t
-  :init
+  :config
   (progn
-    (powerline-default-theme)))
+    (require 'spaceline-config)
+    (spaceline-spacemacs-theme)
+    (spaceline-helm-mode)))
 
 (use-package diminish
   :ensure t)
