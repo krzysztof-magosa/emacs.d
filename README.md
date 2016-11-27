@@ -51,7 +51,7 @@
 |C-c p h|Open helm projectile UI|
 |C-c g|Git grep|
 |C-o p|Find file in project|
-|C-<arrow>|Go to other window by direction|
+|C-\<arrow\>|Go to other window by direction|
 |C-c j|Jump to line|
 |C-c ;|Multi cursor edit|
 |C-c C-c|Comment/uncomment region|
