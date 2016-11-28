@@ -8,7 +8,8 @@
   (progn
     (setq projectile-globally-ignored-files '(
                                               "*.o"
-                                              "a.out"))
+                                              "a.out"
+                                              "*.pyc"))
     (setq projectile-project-root-files '(".project-root"))
     (setq projectile-project-root-files-top-down-recurring '(".project-root"))
     (setq projectile-project-root-files-bottom-up '(".project-root"))
