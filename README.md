@@ -57,6 +57,7 @@
 |C-c C-c|Comment/uncomment region|
 |C-c 1|Show flycheck errors in Helm|
 |C-h f|Describe function|
+|C-c C-o|Toggle neotree|
 |M-.|Go to tag on cursor|
 |C-\<up\>|Jump to window above|
 |C-\<down\>|Jump to window below|

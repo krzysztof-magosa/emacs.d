@@ -286,6 +286,11 @@
   :ensure t
   :defer t)
 
+(use-package neotree
+  :ensure t
+  :defer t
+  :bind ("C-c C-o" . neotree-toggle))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
