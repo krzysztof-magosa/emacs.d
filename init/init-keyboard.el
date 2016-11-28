@@ -1,3 +1,7 @@
+;; fix m-up/m-down
+(define-key global-map "\e[1;9A" [M-up])
+(define-key global-map "\e[1;9B" [M-down])
+
 ;; go to specified line
 (define-key global-map (kbd "C-c j") 'goto-line)
 
