@@ -291,6 +291,10 @@
   :defer t
   :bind ("C-c C-o" . neotree-toggle))
 
+(use-package crontab-mode
+  :ensure t
+  :defer t)
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
