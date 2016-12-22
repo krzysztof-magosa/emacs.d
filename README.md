@@ -70,6 +70,7 @@
 |C-c left|Undo last window operation|
 |C-c right|Redo last window operation|
 |C-c r|Expand region|
+|C-c s|Highlight symbol|
 
 ## Useful commands
 |Command|Action|

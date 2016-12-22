@@ -21,6 +21,7 @@
 (use-package highlight-symbol
   :ensure t
   :defer t
+  :bind("C-c s" . highlight-symbol)
   :config
   (setq-default highlight-symbol-idle-delay 1.0)
   :init
