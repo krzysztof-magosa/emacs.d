@@ -52,7 +52,8 @@
   (progn
     (require 'spaceline-config)
     (spaceline-spacemacs-theme)
-    (spaceline-helm-mode)))
+    (spaceline-helm-mode)
+    (spaceline-toggle-minor-modes-off)))
 
 (use-package diminish
   :ensure t)
