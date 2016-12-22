@@ -9,7 +9,8 @@
     (setq projectile-globally-ignored-files '(
                                               "*.o"
                                               "a.out"
-                                              "*.pyc"))
+                                              "*.pyc"
+                                              "*~"))
     (setq projectile-project-root-files '(".project-root"))
     (setq projectile-project-root-files-top-down-recurring '(".project-root"))
     (setq projectile-project-root-files-bottom-up '(".project-root"))
