@@ -261,6 +261,11 @@
   :ensure t
   :defer t)
 
+(use-package expand-region
+  :ensure t
+  :defer t
+  :bind ("C-c r" . er/expand-region))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t

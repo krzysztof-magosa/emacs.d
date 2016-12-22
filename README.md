@@ -69,6 +69,7 @@
 |C-S-\<right\>|Move buffer to right|
 |C-c left|Undo last window operation|
 |C-c right|Redo last window operation|
+|C-c r|Expand region|
 
 ## Useful commands
 |Command|Action|
