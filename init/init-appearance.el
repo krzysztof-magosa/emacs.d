@@ -5,6 +5,7 @@
 ;; material-theme
 ;; flatland-theme
 ;; moe-theme
+;; gruvbox-theme
 ;; (use-package afternoon-theme
 ;;   :ensure t
 ;;   :init
@@ -15,8 +16,11 @@
 ;;                     (select-frame frame)
 ;;                     (load-theme 'afternoon t)))
 ;;       (load-theme 'afternoon t))))
-(use-package gruvbox-theme
-  :ensure t)
+(use-package moe-theme
+  :ensure t
+  :config
+  (progn
+    (moe-dark)))
 
 (use-package highlight-symbol
   :ensure t
