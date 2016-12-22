@@ -48,7 +48,7 @@
   :bind("M-." . helm-gtags-find-tag)
   :init
   (progn
-    (add-hook 'c-mode-common-hook 'helm-gtags-mode))
+    (add-hook 'prog-mode-common-hook 'helm-gtags-mode))
   :config
   (progn
     (setq helm-gtags-auto-update t)
