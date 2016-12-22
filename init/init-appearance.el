@@ -45,9 +45,6 @@
     (add-hook 'prog-mode-hook 'highlight-indentation-mode)
     (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
-(use-package evil
-  :ensure t)
-
 (use-package spaceline
   :ensure t
   :config
