@@ -266,6 +266,13 @@
   :defer t
   :bind ("C-c r" . er/expand-region))
 
+(use-package highlight-parentheses
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'highlight-parentheses-mode)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
