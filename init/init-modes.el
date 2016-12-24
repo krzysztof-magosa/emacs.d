@@ -183,10 +183,6 @@
   :defer t
   :bind ("C-c C-o" . neotree-toggle))
 
-(use-package crontab-mode
-  :ensure t
-  :defer t)
-
 (use-package expand-region
   :ensure t
   :defer t
