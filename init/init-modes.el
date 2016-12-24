@@ -3,26 +3,6 @@
   :defer t
   :commands markdown-mode)
 
-(use-package web-mode
-  :ensure t
-  :defer t
-  :mode "\\.blade\\.php\\'"
-  :mode "\\.phtml\\'"
-  :mode "\\.html\\'"
-  :config
-  (progn
-    (setq web-mode-markup-indent-offset 2)
-    (setq web-mode-css-indent-offset 2)
-    (setq web-mode-code-indent-offset 2)))
-
-(use-package scss-mode
-  :defer t
-  :ensure t
-  :mode "\\.sass\\'"
-  :config
-  (progn
-    (setq css-indent-offset 2)))
-
 (use-package yaml-mode
   :defer t
   :ensure t
@@ -38,14 +18,6 @@
   :defer t
   :ensure t
   :mode "\\.json\\'")
-
-(use-package js2-mode
-  :defer t
-  :ensure t
-  :mode "\\.js\\'"
-  :init
-  (progn
-    (setq-default js2-basic-offset 2)))
 
 (use-package cmake-mode
   :defer t

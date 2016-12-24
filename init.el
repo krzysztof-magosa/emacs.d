@@ -28,6 +28,7 @@
 (require 'init-ruby)
 (require 'init-python)
 (require 'init-php)
+(require 'init-web)
 (require 'init-unix)
 (require 'init-flycheck)
 (require 'init-mgmt)
