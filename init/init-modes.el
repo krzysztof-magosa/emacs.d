@@ -245,18 +245,4 @@
   (progn
     (add-hook 'prog-mode-hook 'highlight-parentheses-mode)))
 
-;;(use-package emacs-eclim
-;;  :ensure t
-;;  :defer t
-;;  :init
-;;  (progn
-;;    (autoload 'company-emacs-eclim "company-emacs-eclim" "" t nil)
-;;    (setq eclim-eclipse-dirs '("~/eclipse"))
-;;    (setq eclim-executable "~/eclipse/eclim")
-;;    (add-hook 'java-mode-hook 'eclim-mode))
-;;  :config
-;;  (progn
-;;    (require 'eclimd)
-;;    (require 'company-emacs-eclim)))
-
 (provide 'init-modes)
