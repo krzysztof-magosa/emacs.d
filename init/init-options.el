@@ -21,6 +21,8 @@
 
 ;; show matching pairs of parentheses
 (show-paren-mode 1)
+(setq show-paren-when-point-inside-paren t)
+(setq show-paren-when-point-in-periphery t)
 (setq show-paren-style 'parenthesis)
 (setq show-paren-delay 0)
 
