@@ -16,4 +16,8 @@
   (progn
     (add-hook 'python-mode-hook 'pyvenv-mode)))
 
+(use-package pip-requirements
+  :ensure t
+  :defer t)
+
 (provide 'init-python)
