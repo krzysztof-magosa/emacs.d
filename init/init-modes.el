@@ -102,7 +102,8 @@
   :init
   (progn
     (add-hook 'prog-mode-hook 'whitespace-cleanup-mode)
-    (add-hook 'yaml-mode-hook 'whitespace-cleanup-mode)))
+    (add-hook 'yaml-mode-hook 'whitespace-cleanup-mode)
+    (defalias 'wc 'whitespace-cleanup)))
 
 (use-package org
   :ensure t
