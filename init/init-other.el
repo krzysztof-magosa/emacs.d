@@ -12,19 +12,6 @@
     (add-hook 'ruby-mode-hook 'yas-global-mode)
     (add-hook 'php-mode-hook 'yas-global-mode))) ; just for php
 
-(use-package flycheck
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'prog-mode-hook 'flycheck-mode)
-    (add-hook 'yaml-mode-hook 'flycheck-mode))
-  :config
-  (progn
-    (setq flycheck-phpcs-standard "PSR2")
-    (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++11")))
-    (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))))
-
 ;; edit symbol in multiple places in the same time
 (use-package iedit
   :ensure t

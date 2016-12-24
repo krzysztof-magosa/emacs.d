@@ -28,6 +28,7 @@
 (require 'init-modes)
 (require 'init-ruby)
 (require 'init-python)
+(require 'init-flycheck)
 (require 'init-mgmt)
 (require 'init-other)
 (require 'init-keyboard)
