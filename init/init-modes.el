@@ -1,16 +1,7 @@
-(use-package apache-mode
-  :ensure t
-  :defer t)
-
-(use-package nginx-mode
-  :ensure t
-  :defer t)
-
 (use-package markdown-mode
   :ensure t
   :defer t
   :commands markdown-mode)
-
 
 (use-package web-mode
   :ensure t
@@ -65,16 +56,6 @@
   :defer t
   :ensure t
   :mode "\\.go\\'")
-
-(use-package sh-script
-  :ensure t
-  :defer t
-  :commands sh-mode
-  :mode ("\\.zsh\\'" . sh-mode))
-
-(use-package puppet-mode
-  :ensure t
-  :defer t)
 
 (use-package jinja2-mode
   :ensure t
