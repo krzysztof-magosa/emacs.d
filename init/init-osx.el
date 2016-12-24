@@ -1,5 +1,4 @@
 (use-package osx-clipboard
-  :diminish osx-clipboard-mode
   :ensure t
   :init
   (progn

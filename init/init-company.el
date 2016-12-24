@@ -1,6 +1,5 @@
 ;; auto complete related stuff
 (use-package company
-  :diminish company-mode
   :ensure t
   :defer t
   :bind ("M-/" . company-complete-common)

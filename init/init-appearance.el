@@ -32,7 +32,6 @@
   (add-hook 'prog-mode-hook 'highlight-symbol-mode))
 
 (use-package highlight-current-line
-  :diminish highlight-current-line-minor-mode
   :ensure t
   :defer t
   :config
@@ -58,9 +57,6 @@
     (spaceline-spacemacs-theme)
     (spaceline-helm-mode)
     (spaceline-toggle-minor-modes-off)))
-
-(use-package diminish
-  :ensure t)
 
 (set-face-attribute 'default nil
                     :family "Source Code Pro for Powerline"
