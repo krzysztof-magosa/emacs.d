@@ -23,7 +23,6 @@
 (require 'bind-key)
 (require 'init-company)
 (require 'init-git)
-(require 'init-helm)
 (require 'init-osx)
 (require 'init-modes)
 (require 'init-ruby)
