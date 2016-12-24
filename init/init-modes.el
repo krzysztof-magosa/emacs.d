@@ -100,17 +100,6 @@
   :defer t
   :mode ("\\.hax\\'" . haxor-mode))
 
-(use-package flyspell
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'markdown-mode-hook 'flyspell-mode)))
-
-(use-package paradox
-  :ensure t
-  :defer t)
-
 (use-package evil-numbers
   :ensure t
   :defer t
