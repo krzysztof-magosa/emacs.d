@@ -4,6 +4,7 @@
   :commands helm-make-source
   :config
   (progn
+    (setq helm-ff-newfile-prompt-p nil)
     (use-package helm-flx
       :ensure t
       :config
