@@ -138,13 +138,6 @@
   :commands poly-markdown-mode
   :mode ("\\.md\\'" . poly-markdown-mode))
 
-(use-package elpy
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'python-mode-hook 'elpy-mode)))
-
 (use-package rainbow-delimiters
   :ensure t
   :defer t
