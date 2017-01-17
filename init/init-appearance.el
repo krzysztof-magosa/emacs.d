@@ -36,7 +36,7 @@
   :defer t
   :config
   (progn
-    (set-face-background 'highlight-current-line-face "#333333"))
+    (set-face-background 'highlight-current-line-face "#222222"))
   :init
   (progn
     (add-hook 'find-file-hook 'highlight-current-line-minor-mode)))
