@@ -195,4 +195,9 @@
   (progn
     (add-hook 'prog-mode-hook 'highlight-parentheses-mode)))
 
+(use-package conf-mode
+  :ensure f
+  :defer t
+  :mode "hosts/.*")
+
 (provide 'init-modes)
