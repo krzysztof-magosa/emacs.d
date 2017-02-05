@@ -16,11 +16,8 @@
 ;;                     (select-frame frame)
 ;;                     (load-theme 'afternoon t)))
 ;;       (load-theme 'afternoon t))))
-(use-package moe-theme
-  :ensure t
-  :config
-  (progn
-    (moe-dark)))
+(use-package monokai-theme
+  :ensure t)
 
 (use-package highlight-symbol
   :ensure t
