@@ -36,6 +36,7 @@
 (require 'init-keyboard)
 (require 'init-appearance)
 (require 'init-aliases)
+(require 'init-cheatsheet)
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
