@@ -23,4 +23,12 @@
     (git-gutter:linum-setup)
     (setq git-gutter:update-interval 2)))
 
+(use-package git-timemachine
+  :ensure t
+  :defer t)
+
+(use-package smeargle
+  :ensure t
+  :defer t)
+
 (provide 'init-git)
