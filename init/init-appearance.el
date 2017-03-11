@@ -55,6 +55,12 @@
     (spaceline-helm-mode)
     (spaceline-toggle-minor-modes-off)))
 
+(use-package which-key
+  :ensure t
+  :config
+  (progn
+    (which-key-mode t)))
+
 (set-face-attribute 'default nil
                     :family "Source Code Pro for Powerline"
                     :height 130
