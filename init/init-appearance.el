@@ -63,7 +63,9 @@
 
 (set-face-attribute 'default nil
                     :family "Source Code Pro for Powerline"
-                    :height 130
+                    :height 140
                     :weight 'normal)
+
+(when window-system (set-frame-size (selected-frame) 100 25))
 
 (provide 'init-appearance)
