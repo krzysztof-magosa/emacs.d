@@ -8,6 +8,8 @@
 (menu-bar-mode -1)
 ;; don't show tool bar
 (tool-bar-mode -1)
+;; don't show scroll bars
+(scroll-bar-mode -1)
 
 ;; be more interactive ;)
 ;;(ido-mode 1)
@@ -15,6 +17,9 @@
 ;; show line number
 (global-linum-mode 1)
 (setq linum-format " %4d ")
+
+;; visible bell instead of beeps
+(setq visible-bell t)
 
 ;; display column number in status bar
 (setq column-number-mode t)
