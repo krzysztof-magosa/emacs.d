@@ -59,7 +59,7 @@
   :ensure t
   :init
   (progn
-    (projectile-global-mode))
+    (projectile-mode))
   :config
   (progn
     (setq projectile-globally-ignored-files '(
