@@ -10,9 +10,9 @@
     (add-to-list 'company-backends 'company-jedi)
 ;;    (add-to-list 'company-backends 'company-clang)
     (add-to-list 'company-backends 'company-c-headers)
-    (add-to-list 'company-backends 'company-ansible)
+    (add-to-list 'company-backends 'company-ansible))
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
-    (add-to-list 'company-backends 'company-sourcekit))
+;;    (add-to-list 'company-backends 'company-sourcekit))
 ;;    (add-to-list 'company-backends 'company-yasnippet))
   :init
   (progn
