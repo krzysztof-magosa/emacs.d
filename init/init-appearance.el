@@ -62,8 +62,8 @@
     (which-key-mode t)))
 
 (set-face-attribute 'default nil
-                    :family "Source Code Pro for Powerline"
-                    :height 140
+                    :family "Anka/Coder"
+                    :height 160
                     :weight 'normal)
 
 (when window-system (set-frame-size (selected-frame) 100 25))
