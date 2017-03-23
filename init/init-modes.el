@@ -207,4 +207,9 @@
   (progn
     (add-hook 'prog-mode-hook 'hungry-delete-mode)))
 
+(use-package indent-tools
+  :ensure t
+  :defer t
+  :bind("C-c i" . indent-tools-hydra/body))
+
 (provide 'init-modes)
