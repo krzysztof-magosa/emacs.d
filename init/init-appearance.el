@@ -38,16 +38,13 @@
   (progn
     (add-hook 'find-file-hook 'highlight-current-line-minor-mode)))
 
-(use-package highlight-indent-guides
+(use-package highlight-indentation
   :ensure t
   :defer t
-  :config
-  (progn
-    (setq highlight-indent-guides-method 'fill))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-    (add-hook 'yaml-mode-hook 'highlight-indent-guides-mode)))
+    (add-hook 'prog-mode-hook 'highlight-indentation-mode)
+    (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
 (use-package spaceline
   :ensure t
