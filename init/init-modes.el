@@ -200,13 +200,6 @@
   :defer t
   :mode "hosts/.*")
 
-(use-package hungry-delete
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'prog-mode-hook 'hungry-delete-mode)))
-
 (use-package indent-tools
   :ensure t
   :defer t
