@@ -122,7 +122,10 @@
     (save-place-mode 1)))
 
 (use-package smooth-scrolling
-  :ensure t)
+  :ensure t
+  :init
+  (progn
+    (smooth-scrolling-mode)))
 
 (use-package switch-window
   :ensure t
