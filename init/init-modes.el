@@ -124,9 +124,6 @@
 (use-package smooth-scrolling
   :ensure t)
 
-(use-package winner-mode
-  :ensure f)
-
 (use-package switch-window
   :ensure t
   :defer t
