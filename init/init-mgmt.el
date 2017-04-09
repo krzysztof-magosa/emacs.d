@@ -21,10 +21,11 @@
          ("C-x C-f" . helm-find-files)))
 
 
-(use-package helm-git-grep
+(use-package helm-ag
   :ensure t
   :defer t
-  :bind("C-c g" . helm-git-grep))
+  :bind (
+         ("C-c g" . helm-do-ag-project-root)))
 
 (use-package helm-codesearch
   :ensure t
