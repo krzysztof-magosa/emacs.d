@@ -4,17 +4,7 @@
   :commands helm-make-source
   :config
   (progn
-    (setq helm-ff-newfile-prompt-p nil)
-    (use-package helm-flx
-      :ensure t
-      :config
-      (progn
-        (helm-flx-mode +1)))
-    (use-package helm-fuzzier
-      :ensure t
-      :config
-      (progn
-        (helm-fuzzier-mode 1))))
+    (setq helm-ff-newfile-prompt-p nil))
   :bind (
          ("M-x" . helm-M-x)
          ("C-x b" . helm-buffers-list)
