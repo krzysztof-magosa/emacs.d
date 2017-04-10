@@ -27,7 +27,9 @@
 
 (use-package helm-projectile
   :ensure t
-  :defer t)
+  :config
+  (progn
+    (helm-projectile-on)))
 
 (use-package helm-flycheck
   :ensure t
