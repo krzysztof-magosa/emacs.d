@@ -1,11 +1,11 @@
 (use-package helm
   :ensure t
-  :defer t
   :commands helm-make-source
   :config
   (progn
-    (setq helm-ff-newfile-prompt-p nil))
-  :bind (
+    (setq helm-ff-newfile-prompt-p nil)
+    (helm-mode))
+  :bind(
          ("M-x" . helm-M-x)
          ("C-x b" . helm-buffers-list)
          ("C-x C-f" . helm-find-files)))
