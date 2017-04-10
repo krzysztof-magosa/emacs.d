@@ -205,4 +205,11 @@
   :defer t
   :bind("C-c i" . indent-tools-hydra/body))
 
+(use-package dired
+  :ensure f
+  :config
+  (progn
+    (add-hook 'dired-mode-hook 'dired-omit-mode)
+    (setq dired-omit-files "^\\.[^\\.]+\\|^#.*#$\\|^.*~$\\|^\\.$")))
+
 (provide 'init-modes)
