@@ -45,8 +45,7 @@
   (progn
     (add-hook 'prog-mode-hook 'highlight-indentation-mode)
     (add-hook 'yaml-mode-hook 'highlight-indentation-mode)
-    (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))
-    (add-hook 'yaml-mode-hook (lambda () (setq highlight-indentation-offset (symbol-value 'yaml-indent-offset))))))
+    (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
 (use-package spaceline
   :ensure t
