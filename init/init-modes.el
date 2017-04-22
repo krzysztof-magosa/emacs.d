@@ -10,10 +10,6 @@
   :mode "ansible/group_vars/.*"
   :mode "ansible/host_vars/.*")
 
-(use-package erlang
-  :defer t
-  :ensure t)
-
 (use-package json-mode
   :defer t
   :ensure t
