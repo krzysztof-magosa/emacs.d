@@ -209,4 +209,13 @@
     (add-hook 'dired-mode-hook 'dired-omit-mode)
     (setq dired-omit-files "^\\.[^\\.]+\\|^#.*#$\\|^.*~$\\|^\\.$")))
 
+(use-package linum-mode
+  :if window-system
+  :defer t
+  :ensure f
+  :init
+  (progn
+    (setq linum-format " %4d ")
+    (add-hook 'find-file-hook 'linum-mode)))
+
 (provide 'init-modes)

@@ -12,6 +12,7 @@
   :bind(("C-x g" . magit-status)))
 
 (use-package git-gutter
+  :if window-system
   :ensure t
   :defer t
   :commands git-gutter-mode
