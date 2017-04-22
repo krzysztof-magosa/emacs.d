@@ -225,7 +225,6 @@
   (setq tabbar-ruler-global-tabbar t)
   :config
   (progn
-    (setq tabbar-buffer-groups-function 'tabbar-ruler-projectile-tabbar-buffer-groups)
     (setq tabbar-ruler-use-mode-icons nil)
     (setq tabbar-ruler-style 'text)))
 
