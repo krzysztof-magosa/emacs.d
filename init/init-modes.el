@@ -220,6 +220,7 @@
 
 (use-package tabbar-ruler
   :if window-system
+  :ensure t
   :init
   (setq tabbar-ruler-global-tabbar t)
   :config
