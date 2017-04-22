@@ -15,7 +15,10 @@
   :ensure t
   :defer t
   :bind (
-         ("C-c g" . helm-do-ag-project-root)))
+         ("C-c g" . helm-do-ag-project-root))
+  :config
+  (progn
+    (setq helm-ag-command-option "--hidden")))
 
 (use-package helm-codesearch
   :ensure t
