@@ -28,12 +28,6 @@
         ("C-c h t" . helm-codesearch-find-pattern)
         ("C-c h I" . helm-codesearch-create-csearchindex)))
 
-(use-package helm-projectile
-  :ensure t
-  :config
-  (progn
-    (helm-projectile-on)))
-
 (use-package helm-flycheck
   :ensure t
   :defer t
