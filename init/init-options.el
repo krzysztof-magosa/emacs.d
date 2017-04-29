@@ -5,7 +5,8 @@
 (setq inhibit-startup-message t)
 
 ;; don't show menu bar
-(menu-bar-mode -1)
+(if (not window-system)
+    (menu-bar-mode -1))
 ;; don't show tool bar
 (tool-bar-mode -1)
 ;; don't show scroll bars
