@@ -67,6 +67,9 @@
 ;; start with empty editor
 (setq initial-scratch-message "")
 
+;; do not create lock files, i edit all files from one emacs instance
+(setq create-lockfiles nil)
+
 (setq c-default-style
       '((c++-mode . "java")
         (other . "java")))
