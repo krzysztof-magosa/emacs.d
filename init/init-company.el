@@ -5,7 +5,7 @@
   :bind ("M-/" . company-complete-common)
   :config
   (progn
-    (setq company-idle-delay nil)
+    (setq company-idle-delay 0.1)
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends '(company-c-headers company-clang))
     (add-to-list 'company-backends 'company-ansible))
