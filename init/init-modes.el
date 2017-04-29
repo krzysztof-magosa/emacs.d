@@ -20,11 +20,6 @@
   :ensure t
   :mode "CMakeLists.txt\\'\\|\\.cmake\\'")
 
-(use-package go-mode
-  :defer t
-  :ensure t
-  :mode "\\.go\\'")
-
 (use-package jinja2-mode
   :ensure t
   :defer t
