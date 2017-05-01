@@ -6,6 +6,7 @@
   :config
   (progn
     (setq company-idle-delay 0.1)
+    (add-to-list 'company-backends 'company-shell)
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends '(company-c-headers company-clang))
     (add-to-list 'company-backends 'company-ansible))
@@ -16,6 +17,10 @@
   (progn
     (add-hook 'prog-mode-hook 'company-mode)
     (add-hook 'yaml-mode-hook 'company-mode)))
+
+(use-package company-shell
+  :ensure t
+  :defer t)
 
 (use-package company-ansible
   :ensure t
