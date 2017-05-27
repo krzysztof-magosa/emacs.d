@@ -213,4 +213,8 @@
     (setq linum-format " %4d ")
     (add-hook 'find-file-hook 'linum-mode)))
 
+(use-package vdiff
+  :ensure t
+  :defer t)
+
 (provide 'init-modes)
