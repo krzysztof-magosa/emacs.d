@@ -82,4 +82,7 @@
     (setq insert-directory-program "/opt/homebrew/bin/gls")
     (setq dired-listing-switches "-aBhl --group-directories-first")))
 
+;; enable downcase
+(put 'downcase-region 'disabled nil)
+
 (provide 'init-options)
