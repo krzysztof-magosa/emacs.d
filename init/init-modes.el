@@ -217,4 +217,12 @@
   :ensure t
   :defer t)
 
+(use-package hl-todo
+ :ensure t
+ :defer t
+ :init
+ (progn
+   (add-hook 'prog-mode-hook 'hl-todo-mode)
+   (add-hook 'yaml-mode-hook 'hl-todo-mode)))
+
 (provide 'init-modes)
