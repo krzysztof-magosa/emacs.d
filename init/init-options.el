@@ -93,4 +93,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
+;; do not ask whether to follow symlink pointing to vc controlled file, just do it.
+(setq vc-follow-symlinks t)
+
 (provide 'init-options)
