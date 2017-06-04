@@ -5,6 +5,9 @@
 ;; don't display welcome message
 (setq inhibit-startup-message t)
 
+;; ensure file ends with empty line
+(setq require-final-newline t)
+
 ;; don't show menu bar
 (if (not window-system)
     (menu-bar-mode -1))
