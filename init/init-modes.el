@@ -149,6 +149,7 @@
   :defer t
   :init
   (add-hook 'prog-mode-hook (editorconfig-mode 1))
+  (add-hook 'yaml-mode-hook (editorconfig-mode 1))
   (add-hook 'text-mode-hook (editorconfig-mode 1)))
 
 (use-package swift-mode
