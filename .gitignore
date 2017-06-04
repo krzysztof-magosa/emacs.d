@@ -15,3 +15,5 @@ helm-adaptive-history
 .places
 ede-projects.el
 places
+/recentf
+
