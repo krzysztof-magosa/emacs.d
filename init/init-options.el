@@ -16,6 +16,9 @@
 ;; don't show scroll bars
 (scroll-bar-mode -1)
 
+;; store info about recently opened files
+(recentf-mode 1)
+
 ;; be more interactive ;)
 ;;(ido-mode 1)
 
