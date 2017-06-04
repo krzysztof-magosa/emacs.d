@@ -216,4 +216,16 @@
   :bind(("C-c r" . vr/replace)
         ("C-c q" . vr/query-replace)))
 
+(use-package crux
+  :ensure t
+  :defer t
+  :bind(
+        ("C-k" . crux-smart-kill-line)
+        ("M-o" . crux-smart-open-line)
+        ("C-M-o" . crux-smart-open-line-above)
+        ("C-n" . crux-cleanup-buffer-or-region)
+        ("C-c d" . crux-duplicate-current-line-or-region)
+        ("C-c f" . crux-rename-file-and-buffer)
+        ("C-c t" . crux-visit-term-buffer)))
+
 (provide 'init-modes)
