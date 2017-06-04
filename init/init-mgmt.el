@@ -9,7 +9,8 @@
   :bind(
          ("M-x" . helm-M-x)
          ("C-x b" . helm-buffers-list)
-         ("C-x C-f" . helm-find-files)))
+         ("C-x C-f" . helm-find-files)
+         ("C-c k" . helm-show-kill-ring)))
 
 
 (use-package helm-ag
