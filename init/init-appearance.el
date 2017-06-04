@@ -16,7 +16,7 @@
 ;;                     (select-frame frame)
 ;;                     (load-theme 'afternoon t)))
 ;;       (load-theme 'afternoon t))))
-(use-package monokai-theme
+(use-package material-theme
   :ensure t)
 
 (use-package highlight-symbol
