@@ -96,7 +96,7 @@
     (which-key-mode t)))
 
 (set-face-attribute 'default nil
-                    :family "Anka/Coder"
+                    :family "CamingoCode"
                     :height 160
                     :weight 'normal)
 
