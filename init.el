@@ -17,7 +17,6 @@
   :ensure t)
 
 (add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
-(add-to-list 'exec-path "/opt/homebrew/bin")
 
 (require 'init-options)
 (require 'bind-key)

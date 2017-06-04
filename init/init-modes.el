@@ -228,4 +228,15 @@
         ("C-c f" . crux-rename-file-and-buffer)
         ("C-c t" . crux-visit-term-buffer)))
 
+(use-package exec-path-from-shell
+  :ensure t
+  :defer t
+  :if window-system
+  :init
+  (progn
+    (setq exec-path-from-shell-check-startup-files nil)
+    (exec-path-from-shell-initialize)
+    (exec-path-from-shell-copy-env "PYTHONUSERBASE")
+    (exec-path-from-shell-copy-env "GTAGSLABEL")))
+
 (provide 'init-modes)
