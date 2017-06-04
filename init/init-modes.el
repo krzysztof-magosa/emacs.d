@@ -167,7 +167,7 @@
 (use-package expand-region
   :ensure t
   :defer t
-  :bind ("C-c r" . er/expand-region))
+  :bind ("C-c e" . er/expand-region))
 
 (use-package highlight-parentheses
   :ensure t
