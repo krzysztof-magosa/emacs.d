@@ -18,6 +18,7 @@
   :commands git-gutter-mode
   :init
   (progn
+    (add-hook 'yaml-mode-hook 'git-gutter-mode)
     (add-hook 'prog-mode-hook 'git-gutter-mode))
   :config
   (progn
