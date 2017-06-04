@@ -1,5 +1,6 @@
 (use-package helm
   :ensure t
+  :diminish helm-mode
   :commands helm-make-source
   :config
   (progn
@@ -36,6 +37,7 @@
 (use-package helm-gtags
   :ensure t
   :defer t
+  :diminish helm-gtags-mode
   :bind("M-." . helm-gtags-find-tag)
   :init
   (progn

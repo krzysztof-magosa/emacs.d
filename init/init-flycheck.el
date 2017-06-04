@@ -1,6 +1,7 @@
 (use-package flycheck
   :ensure t
   :defer t
+  :diminish flycheck-mode
   :init
   (progn
     (add-hook 'prog-mode-hook 'flycheck-mode)

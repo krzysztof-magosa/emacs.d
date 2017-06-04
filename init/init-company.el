@@ -2,6 +2,7 @@
 (use-package company
   :ensure t
   :defer t
+  :diminish company-mode
   :bind ("M-/" . company-complete-common)
   :config
   (progn
