@@ -34,4 +34,9 @@
   :ensure t
   :defer t)
 
+;; profiler for startup
+(use-package esup
+  :ensure t
+  :defer t)
+
 (provide 'init-other)
