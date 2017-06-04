@@ -1,5 +1,6 @@
 ;; always use spaces and not tabs to indent code
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 ;; don't display welcome message
 (setq inhibit-startup-message t)
