@@ -214,4 +214,10 @@
    (add-hook 'prog-mode-hook 'hl-todo-mode)
    (add-hook 'yaml-mode-hook 'hl-todo-mode)))
 
+(use-package visual-regexp-steroids
+  :ensure t
+  :defer t
+  :bind(("C-c r" . vr/replace)
+        ("C-c q" . vr/query-replace)))
+
 (provide 'init-modes)
