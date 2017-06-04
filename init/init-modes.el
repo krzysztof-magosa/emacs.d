@@ -133,17 +133,6 @@
         ("C-S-<left>" . buf-move-left)
         ("C-S-<right>" . buf-move-right)))
 
-(use-package linum-relative
-  :ensure t
-  :defer f
-  :disabled t
-  :init
-  (progn
-    (linum-relative-mode))
-  :config
-  (progn
-    (setq linum-relative-format "%3s ")))
-
 (use-package cmake-ide
   :ensure t
   :defer t
