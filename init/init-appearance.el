@@ -1,21 +1,3 @@
-;; flatland-theme
-;; ujelly-theme
-;; molokai-theme
-;; twilight-bright-theme
-;; material-theme
-;; flatland-theme
-;; moe-theme
-;; gruvbox-theme
-;; (use-package afternoon-theme
-;;   :ensure t
-;;   :init
-;;   (progn
-;;     (if (daemonp)
-;;         (add-hook 'after-make-frame-functions
-;;                   (lambda (frame)
-;;                     (select-frame frame)
-;;                     (load-theme 'afternoon t)))
-;;       (load-theme 'afternoon t))))
 (use-package material-theme
   :ensure t)
 
