@@ -20,6 +20,7 @@
          ("C-c g" . helm-do-ag-project-root))
   :config
   (progn
+    (setq helm-ag-fuzzy-match t)
     (setq helm-ag-command-option "--hidden --skip-vcs-ignores")))
 
 (use-package helm-codesearch
