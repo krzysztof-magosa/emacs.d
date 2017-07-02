@@ -26,7 +26,9 @@
   :init
   (progn
     (add-hook 'prog-mode-hook 'highlight-indentation-mode)
+    (add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)
     (add-hook 'yaml-mode-hook 'highlight-indentation-mode)
+    (add-hook 'yaml-mode-hook 'highlight-indentation-current-column-mode)
     (add-hook 'c++-mode-hook (lambda () (setq highlight-indentation-offset 2)))))
 
 (use-package smart-mode-line
