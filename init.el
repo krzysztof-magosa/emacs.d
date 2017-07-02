@@ -1,4 +1,5 @@
-(setq gc-cons-threshold (* 128 1024 1024))
+;; Disable garbage collector for faster startup
+(setq gc-cons-threshold most-positive-fixnum)
 
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -39,3 +40,6 @@
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
+
+;; Set reasonable garbage collector threshold to do not hit long pauses
+(setq gc-cons-threshold (* 1024 1024 4))
