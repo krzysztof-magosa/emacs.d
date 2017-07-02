@@ -1,5 +1,8 @@
 (use-package gruvbox-theme
-  :ensure t)
+  :ensure t
+  :defer t
+  :init
+  (load-theme 'gruvbox-dark-hard t))
 
 (use-package highlight-symbol
   :ensure t
