@@ -4,21 +4,12 @@
   :init
   (load-theme 'gruvbox-dark-hard t))
 
-(use-package highlight-symbol
-  :ensure t
-  :defer t
-  :bind("C-c s" . highlight-symbol)
-  :config
-  (setq-default highlight-symbol-idle-delay 1.0)
-  :init
-  (add-hook 'prog-mode-hook 'highlight-symbol-mode))
-
 (use-package highlight-current-line
   :ensure t
   :defer t
   :config
   (progn
-    (set-face-background 'highlight-current-line-face "#202020"))
+    (set-face-background 'highlight-current-line-face "#282828"))
   :init
   (progn
     (add-hook 'find-file-hook 'highlight-current-line-minor-mode)))
