@@ -6,6 +6,10 @@
 ;; Avoid outdated byte-compiled files
 (setq load-prefer-newer t)
 
+;; Customisations
+(setq custom-file "~/.emacs.d/custom.el")
+(when (file-exists-p custom-file) (load custom-file))
+
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -42,9 +46,6 @@
 (require 'init-appearance)
 (require 'init-aliases)
 (require 'init-cheatsheet)
-
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
 
 ;; Set reasonable garbage collector threshold to do not hit long pauses
 (setq gc-cons-threshold (* 1024 1024 4))
