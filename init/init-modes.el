@@ -43,6 +43,7 @@
 
 (use-package whitespace-cleanup-mode
   :ensure t
+  :defer t
   :init
   (progn
     (add-hook 'prog-mode-hook 'whitespace-cleanup-mode)
