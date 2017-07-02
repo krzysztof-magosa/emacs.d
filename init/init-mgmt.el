@@ -12,6 +12,10 @@
          ("C-x C-f" . helm-find-files)
          ("C-c k" . helm-show-kill-ring)))
 
+(use-package helm-swoop
+  :ensure t
+  :defer t
+  :bind("C-c s" . helm-swoop))
 
 (use-package helm-ag
   :ensure t
