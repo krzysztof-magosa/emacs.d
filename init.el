@@ -3,6 +3,9 @@
 ;; Disable garbage collector for faster startup
 (setq gc-cons-threshold most-positive-fixnum)
 
+;; Avoid outdated byte-compiled files
+(setq load-prefer-newer t)
+
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
