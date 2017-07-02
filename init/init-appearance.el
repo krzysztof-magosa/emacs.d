@@ -1,4 +1,4 @@
-(use-package material-theme
+(use-package gruvbox-theme
   :ensure t)
 
 (use-package highlight-symbol
