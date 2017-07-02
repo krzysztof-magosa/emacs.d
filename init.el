@@ -1,3 +1,5 @@
+;; -*- no-byte-compile: t -*-
+
 ;; Disable garbage collector for faster startup
 (setq gc-cons-threshold most-positive-fixnum)
 
