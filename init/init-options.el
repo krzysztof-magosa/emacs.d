@@ -19,9 +19,6 @@
 ;; store info about recently opened files
 (recentf-mode 1)
 
-;; be more interactive ;)
-;;(ido-mode 1)
-
 ;; visible bell instead of beeps
 (setq visible-bell t)
 
