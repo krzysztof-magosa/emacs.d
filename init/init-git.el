@@ -29,8 +29,4 @@
   :ensure t
   :defer t)
 
-(use-package smeargle
-  :ensure t
-  :defer t)
-
 (provide 'init-git)
