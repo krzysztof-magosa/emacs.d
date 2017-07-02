@@ -1,60 +1,86 @@
-(use-package helm
+(use-package flx
   :ensure t
-  :diminish helm-mode
-  :commands helm-make-source
-  :config
-  (progn
-    (setq helm-ff-newfile-prompt-p nil)
-    (helm-mode))
-  :bind(
-         ("M-x" . helm-M-x)
-         ("C-x b" . helm-buffers-list)
-         ("C-x C-f" . helm-find-files)
-         ("C-c k" . helm-show-kill-ring)))
+  :defer t)
 
-
-(use-package helm-ag
+(use-package ivy
   :ensure t
-  :defer t
-  :bind (
-         ("C-c g" . helm-do-ag-project-root))
-  :config
-  (progn
-    (setq helm-ag-fuzzy-match t)
-    (setq helm-ag-command-option "--hidden --skip-vcs-ignores")))
-
-(use-package helm-codesearch
-  :ensure t
-  :defer t
-  :bind(
-        ("C-c h f" . helm-codesearch-find-file)
-        ("C-c h t" . helm-codesearch-find-pattern)
-        ("C-c h I" . helm-codesearch-create-csearchindex)))
-
-(use-package helm-flycheck
-  :ensure t
-  :defer t
-  :bind ("C-c 1" . helm-flycheck))
-
-(use-package helm-gtags
-  :ensure t
-  :defer t
-  :diminish helm-gtags-mode
-  :bind("M-." . helm-gtags-find-tag)
   :init
-  (progn
-    (add-hook 'prog-mode-hook 'helm-gtags-mode))
-  :config
-  (progn
-    (setq helm-gtags-auto-update t)
-    (setq helm-gtags-use-input-at-cursor t)))
+  (ivy-mode))
+
+(use-package swiper
+  :ensure t
+  :defer t
+  :bind("C-c s" . swiper))
+
+(use-package counsel
+  :ensure t
+  :defer t)
+
+(use-package counsel-projectile
+  :ensure t
+  :defer t
+  :bind("C-c g" . counsel-projectile-ag))
+
+(use-package counsel-gtags
+  :ensure t
+  :defer t)
+
+;; (use-package helm
+;;   :ensure t
+;;   :diminish helm-mode
+;;   :commands helm-make-source
+;;   :config
+;;   (progn
+;;     (setq helm-ff-newfile-prompt-p nil)
+;;     (helm-mode))
+;;   :bind(
+;;          ("M-x" . helm-M-x)
+;;          ("C-x b" . helm-buffers-list)
+;;          ("C-x C-f" . helm-find-files)
+;;          ("C-c k" . helm-show-kill-ring)))
+
+
+;; (use-package helm-ag
+;;   :ensure t
+;;   :defer t
+;;   :bind (
+;;          ("C-c g" . helm-do-ag-project-root))
+;;   :config
+;;   (progn
+;;     (setq helm-ag-fuzzy-match t)
+;;     (setq helm-ag-command-option "--hidden --skip-vcs-ignores")))
+
+;; (use-package helm-codesearch
+;;   :ensure t
+;;   :defer t
+;;   :bind(
+;;         ("C-c h f" . helm-codesearch-find-file)
+;;         ("C-c h t" . helm-codesearch-find-pattern)
+;;         ("C-c h I" . helm-codesearch-create-csearchindex)))
+
+;; (use-package helm-flycheck
+;;   :ensure t
+;;   :defer t
+;;   :bind ("C-c 1" . helm-flycheck))
+
+;; (use-package helm-gtags
+;;   :ensure t
+;;   :defer t
+;;   :diminish helm-gtags-mode
+;;   :bind("M-." . helm-gtags-find-tag)
+;;   :init
+;;   (progn
+;;     (add-hook 'prog-mode-hook 'helm-gtags-mode))
+;;   :config
+;;   (progn
+;;     (setq helm-gtags-auto-update t)
+;;     (setq helm-gtags-use-input-at-cursor t)))
 
 (use-package projectile
   :ensure t
   :init
-  (progn
-    (projectile-mode))
-  :config
+  (projectile-mode)
+   :config
   (progn
     (setq projectile-globally-ignored-files '(
                                               "*.o"
@@ -67,7 +93,7 @@
     (setq projectile-project-root-files-top-down-recurring '(".project-root"))
     (setq projectile-project-root-files-bottom-up '(".project-root"))
     (setq projectile-git-command "git ls-files -zco")
-    (setq projectile-completion-system 'helm)
+    (setq projectile-completion-system 'ivy)
     (setq projectile-enable-idle-timer t)))
 
 (provide 'init-mgmt)
