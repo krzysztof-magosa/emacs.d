@@ -93,7 +93,7 @@
 ;; do not ask whether to follow symlink pointing to vc controlled file, just do it.
 (setq vc-follow-symlinks t)
 
-(add-hook 'find-file-hook '(lambda ()
-                             (setq display-line-numbers t)))
+(setq-default display-line-numbers t)
+(setq-default display-line-numbers-width 3)
 
 (provide 'init-options)
