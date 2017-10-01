@@ -18,6 +18,7 @@
 
 (use-package crontab-mode
   :ensure t
-  :defer t)
+  :defer t
+  :disabled t)
 
 (provide 'init-unix)
