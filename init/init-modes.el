@@ -183,7 +183,7 @@
   :defer t
   :bind("C-c i" . indent-tools-hydra/body))
 
-(use-package dired
+(use-package dired-x
   :ensure f
   :config
   (progn
