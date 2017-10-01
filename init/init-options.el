@@ -66,7 +66,7 @@
 ;; electric indent
 (electric-indent-mode 1)
 ;; electric pair mode (for parens)
-(electric-pair-mode 1)
+;(electric-pair-mode 1)
 
 ;; start with empty editor
 (setq initial-scratch-message "")
