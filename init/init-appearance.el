@@ -4,15 +4,12 @@
   :init
   (load-theme 'gruvbox-dark-hard t))
 
-(use-package highlight-current-line
+(use-package hl-line+
   :ensure t
   :defer t
-  :config
-  (progn
-    (set-face-background 'highlight-current-line-face "#282828"))
   :init
   (progn
-    (add-hook 'find-file-hook 'highlight-current-line-minor-mode)))
+    (add-hook 'find-file-hook 'hl-line-mode)))
 
 (use-package highlight-indentation
   :ensure t
