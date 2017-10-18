@@ -60,6 +60,9 @@
     (projectile-mode))
   :config
   (progn
+    (setq projectile-mode-line
+         '(:eval (format " Projectile[%s]"
+                        (projectile-project-name))))
     (setq projectile-globally-ignored-files '(
                                               "*.o"
                                               "a.out"
