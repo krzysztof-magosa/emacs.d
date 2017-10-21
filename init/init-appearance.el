@@ -1,8 +1,5 @@
-(use-package gruvbox-theme
-  :ensure t
-  :defer t
-  :init
-  (load-theme 'gruvbox-dark-hard t))
+(use-package molokai-theme
+  :ensure t)
 
 (use-package hl-line+
   :ensure t
