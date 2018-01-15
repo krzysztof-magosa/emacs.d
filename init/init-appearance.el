@@ -1,12 +1,14 @@
 (use-package molokai-theme
   :ensure t)
 
-(use-package hl-line+
-  :ensure t
-  :defer t
+;; Highlight current line
+(use-package hl-line
+  :ensure f
+  :defer f
   :init
   (progn
-    (add-hook 'find-file-hook 'hl-line-mode)))
+    (global-hl-line-mode 1)
+    (set-face-background hl-line-face "#333333")))
 
 (use-package highlight-indentation
   :ensure t
