@@ -57,11 +57,4 @@
     (setq company-quickhelp-idle-delay 0.2)
     (add-hook 'after-init-hook 'company-quickhelp-mode)))
 
-(use-package company-statistics
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'after-init-hook 'company-statistics-mode)))
-
 (provide 'init-company)
