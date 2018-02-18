@@ -22,7 +22,6 @@
     (add-hook 'prog-mode-hook 'git-gutter-mode))
   :config
   (progn
-    (git-gutter:linum-setup)
     (setq git-gutter:update-interval 2)))
 
 (use-package git-timemachine
